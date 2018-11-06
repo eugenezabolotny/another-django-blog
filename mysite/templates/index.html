@@ -1,0 +1,7 @@
+{%  load static %}
+
+<img src="{% static 'cool-dog.jpg' %}" alt="cool dog">
+
+{% for article in articles %}
+    <p>{{ article.title }}</p>
+{% endfor %}
