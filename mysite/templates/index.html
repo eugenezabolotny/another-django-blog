@@ -4,6 +4,7 @@
 {% block title %}{{ page_title }}{% endblock %}
 
 {% block content %}
+    <a href="{% url 'add_article' %}" class="btn btn-primary">Add</a>
     <h1>Articles</h1>
     <ul>
         {% for article in object_list %}
